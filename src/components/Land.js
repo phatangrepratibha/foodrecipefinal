@@ -5,6 +5,7 @@ import img2 from "../images/ramen.jpg";
 import img3 from "../images/tt2.jpg";
 import Lottie from "lottie-react";
 import anim from "../Animations/abt3.json";
+import { Link } from 'react-router-dom';
 
 
 const Land = () => {
@@ -22,7 +23,9 @@ const Land = () => {
   <img src={img1} class="card-img-top" alt="..."/>
   <div class="card-body">
     <p class="card-text">Kimchi</p><hr/>
-    <button type="button" class="btn btn-dark">Read</button>
+    <Link to="/kimchi">
+    <button type="button" class="btn btn-dark">Read Recipe</button>
+    </Link>
 
   </div>
 </div>
@@ -31,14 +34,18 @@ const Land = () => {
     <img src={img2} class="card-img-top" alt="..."/>
   <div class="card-body">
     <p class="card-text">Ramen</p><hr/>
-    <button type="button" class="btn btn-dark">Read</button>
+    <Link to="/ramen">
+    <button type="button" class="btn btn-dark">Read Recipe</button>
+    </Link>
   </div>
     </div>
     <div class="col">
     <img src={img3} class="card-img-top" alt="..."/>
   <div class="card-body">
     <p class="card-text">Tteokbokki</p><hr/>
-    <button type="button" class="btn btn-dark">Read</button>
+    <Link to="/tteo">
+    <button type="button" class="btn btn-dark">Read Recipe</button>
+    </Link>
   </div>
     </div>
   </div>
