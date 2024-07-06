@@ -4,6 +4,7 @@ import img1 from '../images/bibimbap.jpg';
 import img2 from '../images/gimbap.jpeg';
 import img3 from '../images/bulgogi.webp';
 
+
 const Recipe = () => {
   return (
   <>
@@ -54,6 +55,7 @@ const Recipe = () => {
         <Link to="/bulgogi">
     <button type="button" class="btn btn-dark">Read Recipe</button>
     </Link>
+
       </div>
     </div>
     </div>

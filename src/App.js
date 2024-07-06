@@ -15,10 +15,12 @@ import Gimbap from './components/Gimbap';
 import Bulgogi from './components/Bulgogi';
 
 
+
 function App() {
   return (
     <div className="App">
       <Navbar/>
+     
      {/* <Land/> */}
 
      <Routes>
@@ -34,7 +36,6 @@ function App() {
       <Route path="/bulgogi" element={<Bulgogi/>}/>
      </Routes>
      <Footer/>
-    
     
      
     </div>
