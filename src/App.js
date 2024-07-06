@@ -10,7 +10,9 @@ import Login from './components/Login';
 import Kimchi from './components/Kimchi';
 import Ramen from './components/Ramen';
 import Tteo from './components/Tteo';
-
+import Bibimbap from './components/Bibimbap';
+import Gimbap from './components/Gimbap';
+import Bulgogi from './components/Bulgogi';
 
 
 function App() {
@@ -27,6 +29,9 @@ function App() {
       <Route path="/kimchi" element={<Kimchi/>}/>
       <Route path="/ramen" element={<Ramen/>}/>
       <Route path="/tteo" element={<Tteo/>}/>
+      <Route path="/bibimbap" element={<Bibimbap/>}/>
+      <Route path="/gimbap" element={<Gimbap/>}/>
+      <Route path="/bulgogi" element={<Bulgogi/>}/>
      </Routes>
      <Footer/>
     

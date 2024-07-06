@@ -1,0 +1,43 @@
+/* Kimchi.css
+
+.ingredients-list li, .instructions-list li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background: #f8f9fa;
+    margin-bottom: 10px;
+  }
+  
+  .ingredients-list li {
+    border-left: 4px solid #dc3545;
+  }
+  
+  .instructions-list li {
+    border-left: 4px solid #28a745;
+  }
+  
+  .list-group-numbered li::marker {
+    font-size: 1.5rem;
+    color: #dc3545;
+  }
+  
+  h2 {
+    color: #dc3545;
+    border-bottom: 2px solid #dc3545;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .img-fluid {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-danger {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+  
+  .btn-danger:hover {
+    background-color: #a71d2a;
+    border-color: #a71d2a;
+  }
+   */
