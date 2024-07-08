@@ -99,8 +99,6 @@ app.post('/login', async (req, res)=>{
 app.get('/auth', authenticate, (req,res)=>{
 
 })
-
-
 //Run Server
 app.listen(port, ()=>{
     console.log("Server is Listening")
