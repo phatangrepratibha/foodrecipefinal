@@ -89,10 +89,10 @@ app.post('/login', async (req, res)=>{
 
 
 //Logout Page
-// app.get('/logout', (req,res)=>{
-//     res.clearCookie("jwt", {path : '/'})
-//     res.status(200).send("User Logged Out")
-// })
+app.get('/logout', (req,res)=>{
+    res.clearCookie("jwt", {path : '/'})
+    res.status(200).send("User Logged Out")
+})
 
 
 //Authentication

@@ -1,7 +1,7 @@
 import React from 'react'
 import logi from "../images/logo.jpg"
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -18,17 +18,26 @@ const Navbar = () => {
           <a class="nav-link active" href="/recipe">Recipe</a>
         </li>
 
+       {props.auth ?
+       <>
         <li class="nav-item">
           <a class="nav-link active" href="/register">Register</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" href="login">Login</a>
+          <a class="nav-link active" href="/login">Login</a>
         </li>
-       
-       
+        </>
+         :
+         
+        <>
+        <li class="nav-item">
+          <a class="nav-link active" href="/logout">Logout</a>
+        </li>
+        </>
+}
       </ul>
-      
+         
     </div>
   </div>
 </nav>
