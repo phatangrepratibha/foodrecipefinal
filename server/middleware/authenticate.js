@@ -1,6 +1,4 @@
-
-
-const jwt = require('jsonwebtoken');
+// const jwt = require('jsonwebtoken');
 const Users = require('../models/userSchema');
 
 const authenticate = async (req, res, next) =>{

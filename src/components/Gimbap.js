@@ -103,12 +103,12 @@ const Gimbap = () => {
           
           
         </div>
-        <div class="container">
-        <div class="row">
-        <div class="col">
-            <div class="card border-dark">
-                <div class="card-body">
-                    <h5 class="card-title">Tips:</h5>
+        <div className="container">
+        <div className="row">
+        <div className="col">
+            <div className="card border-dark">
+                <div className="card-body">
+                    <h5 className="card-title">Tips:</h5>
                     <ul>
                       <li>Variations: You can substitute or add ingredients like kimchi, cheese, or different types of meat.</li>
                       <li>Vegan Option: Use tofu instead of beef and skip the crab sticks.</li>

@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Land from './components/Land';
 import Footer from './components/Footer';
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Switch } from "react-router-dom";
 import Recipe from './components/Recipe';
 import Register from './components/Register';
 import Login from './components/Login';
@@ -24,7 +24,7 @@ function App() {
 
   const isLoggedIn=async()=>{
     try{
-      const res=await fetch('/logout',{
+      const res=await fetch('/auth',{
           method:"GET",
           headers:{
               Accept:"application/json",
@@ -57,32 +57,24 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar auth={auth}/>
+      <Navbar auth={auth1}/>
      
      {/* <Land/> */}
 
-     <Routes>
-      <Route path="/" element={<Land/>}/>
-      <Route path="/recipe" element={<Recipe/>} />
-      <Route  path="/register" element={<ProtectedRoute auth={auth1}>
-                <Register/>
-        </ProtectedRoute>}/>
-      <Route  path="/login" element={<ProtectedRoute auth={auth1}>
-                  <Login/>
-      </ProtectedRoute>}/>
-      <Route path="/kimchi" element={<Kimchi/>}/>
-      <Route path="/ramen" element={<Ramen/>}/>
-      <Route path="/tteo" element={<Tteo/>}/>
-      <Route path="/bibimbap" element={<Bibimbap/>}/>
-      <Route path="/gimbap" element={<Gimbap/>}/>
-      <Route path="/bulgogi" element={<Bulgogi/>}/>
-      <Route  path="/logout" element={<ProtectedRoute auth={auth1}>
-        <Logout/>
-        </ProtectedRoute>}/>
-     </Routes>
-     <Footer/>
-    
-     
+     <Switch>
+      <Route  path="/" component={Land}/>
+      <Route path="/recipe" component={Recipe} />
+      <ProtectedRoute path="/register" component={Register} auth={auth1}/>
+      <ProtectedRoute path="/login" component={Login} auth={auth1}/>
+      <Route path="/kimchi" component={Kimchi}/>
+      <Route path="/ramen" component={Ramen}/>
+      <Route path="/tteo" component={Tteo}/>
+      <Route path="/bibimbap" component={Bibimbap}/>
+      <Route path="/gimbap" component={Gimbap}/>
+      <Route path="/bulgogi" component={Bulgogi}/>
+      <ProtectedRoute path="/logout" component={Logout} auth={auth}/>
+     </Switch>
+     <Footer/> 
     </div>
   );
 }

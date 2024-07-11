@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
-import { useHistory } from 'react-router';
+import { useHistory } from 'react-router-dom';
 
 
 const Register = () =>{
 
-    const history = useNavigate()
+    const history = useHistory()
 
     const [user, setuser] = useState({
         username : "",

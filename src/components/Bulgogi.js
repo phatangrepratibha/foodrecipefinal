@@ -98,12 +98,12 @@ const Bulgogi = () => {
             </ul>
           </ul>
         </div>
-        <div class="container">
-        <div class="row">
-        <div class="col">
-            <div class="card border-dark">
-                <div class="card-body">
-                    <h5 class="card-title">Tips:</h5>
+        <div className="container">
+        <div className="row">
+        <div className="col">
+            <div className="card border-dark">
+                <div className="card-body">
+                    <h5 className="card-title">Tips:</h5>
                     <ul>
                       <li>Variations: You can add other vegetables like bell peppers or zucchini to the stir-fry for extra texture and flavor.</li>
                       <li>Vegan Option: Substitute beef with tofu or mushrooms, and use a soy-based marinade..</li>

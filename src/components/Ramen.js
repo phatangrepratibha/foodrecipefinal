@@ -12,21 +12,21 @@ const Ramen = () => {
   };
   return (
     <>
-    <div className="kimchi-background" style={backgroundStyle}>
-    <h1 className='text-center'>Ramen Recipe</h1>
-      <div className="mx-5 mt-5">
-        <div className="row">
-          <div className="col-md-6">
+    <div classNameName="kimchi-background" style={backgroundStyle}>
+    <h1 classNameName='text-center'>Ramen Recipe</h1>
+      <div classNameName="mx-5 mt-5">
+        <div classNameName="row">
+          <div classNameName="col-md-6">
             <img
               src={img}
-              className="card-img-top"
+              classNameName="card-img-top"
               alt="Delicious Kimchi"
               style={{ height: '400px', width: '400px' }}
             />
           </div>
-          <div className="col-md-6 d-flex align-items-center">
+          <div classNameName="col-md-6 d-flex align-items-center">
             <div>
-              <h1 className="mb-5">Ingredients</h1> 
+              <h1 classNameName="mb-5">Ingredients</h1> 
               <ul>
                 <li>4 cups chicken or vegetable broth</li>
                 <li>2 packs of ramen noodles (discard the seasoning packets if using your own broth)</li>
@@ -46,7 +46,7 @@ const Ramen = () => {
         </div>
       </div>
 
-      <h1 className='text-center mt-5'>Instructions To Cook</h1>
+      <h1 classNameName='text-center mt-5'>Instructions To Cook</h1>
         <div> 
           <ul style={{ listStyleType: 'decimal' }}>
             <li style={{ fontWeight: 'bold',fontSize: '1.2rem'  }}>Prepare the Broth:</li>In a large pot, heat sesame oil over medium heat. Add minced garlic and grated ginger, sauté for 1-2 minutes until fragrant.
@@ -61,12 +61,12 @@ const Ramen = () => {
             <li style={{ fontWeight: 'bold',fontSize: '1.2rem'  }}>Customize:</li>You can adjust the flavors by adding more soy sauce, a dash of rice vinegar for tanginess, or a pinch of sugar for sweetness.
           </ul>
         </div>
-        <div class="container">
-        <div class="row">
-        <div class="col">
-            <div class="card border-dark">
-                <div class="card-body">
-                    <h5 class="card-title">Tips:</h5>
+        <div className="container">
+        <div className="row">
+        <div className="col">
+            <div className="card border-dark">
+                <div className="card-body">
+                    <h5 className="card-title">Tips:</h5>
                     This recipe is quite versatile, so feel free to experiment with different vegetables, proteins, or toppings to suit your preferences!
                 </div>
             </div>

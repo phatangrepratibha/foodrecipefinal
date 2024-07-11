@@ -12,21 +12,21 @@ const Tteo = () => {
   };
   return (
     <>
-    <div className="kimchi-background" style={backgroundStyle}>
-    <h1 className='text-center'>Tteokbokki Recipe</h1>
-      <div className="mx-5 mt-5">
-        <div className="row">
-          <div className="col-md-6">
+    <div classNameName="kimchi-background" style={backgroundStyle}>
+    <h1 classNameName='text-center'>Tteokbokki Recipe</h1>
+      <div classNameName="mx-5 mt-5">
+        <div classNameName="row">
+          <div classNameName="col-md-6">
             <img
               src={img}
-              className="card-img-top"
+              classNameName="card-img-top"
               alt="Delicious Kimchi"
               style={{ height: '400px', width: '470px' }}
             />
           </div>
-          <div className="col-md-6 d-flex align-items-center">
+          <div classNameName="col-md-6 d-flex align-items-center">
             <div>
-              <h1 className="mb-5">Ingredients</h1> 
+              <h1 classNameName="mb-5">Ingredients</h1> 
               <ul>
                 <li>1 pound Korean rice cakes (tteok)</li>
                 <li>4 cups water or anchovy broth</li>
@@ -46,7 +46,7 @@ const Tteo = () => {
         </div>
       </div>
 
-      <h1 className='text-center mt-5'>Instructions To Cook</h1>
+      <h1 classNameName='text-center mt-5'>Instructions To Cook</h1>
         <div> 
           <ul style={{ listStyleType: 'decimal' }}>
             <li style={{ fontWeight: 'bold',fontSize: '1.2rem'  }}>Prepare the Rice Cakes:</li>If the rice cakes are hard or frozen, soak them in warm water for about 10-15 minutes until they are softened.
@@ -66,12 +66,12 @@ const Tteo = () => {
             <li style={{ fontWeight: 'bold',fontSize: '1.2rem'  }}>Garnish:</li>Serve hot, optionally garnished with additional green onions or sesame seeds.
           </ul>
         </div>
-        <div class="container">
-        <div class="row">
-        <div class="col">
-            <div class="card border-dark">
-                <div class="card-body">
-                    <h5 class="card-title">Tips:</h5>
+        <div className="container">
+        <div className="row">
+        <div className="col">
+            <div className="card border-dark">
+                <div className="card-body">
+                    <h5 className="card-title">Tips:</h5>
                     You can adjust the spice level by altering the amount of gochujang and gochugaru.
                     For a non-spicy version, you can omit the gochugaru and use a milder chili paste or none at all.
                     You can add various ingredients like cabbage, carrots, or even ramen noodles to the Tteokbokki for a more filling dish.                </div>
