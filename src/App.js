@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Land from './components/Land';
 import Footer from './components/Footer';
-import { Route, Routes, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Recipe from './components/Recipe';
 import Register from './components/Register';
 import Login from './components/Login';
@@ -61,19 +61,19 @@ function App() {
      
      {/* <Land/> */}
 
-     <Switch>
-      <Route  path="/" component={Land}/>
-      <Route path="/recipe" component={Recipe} />
-      <ProtectedRoute path="/register" component={Register} auth={auth1}/>
-      <ProtectedRoute path="/login" component={Login} auth={auth1}/>
-      <Route path="/kimchi" component={Kimchi}/>
-      <Route path="/ramen" component={Ramen}/>
-      <Route path="/tteo" component={Tteo}/>
-      <Route path="/bibimbap" component={Bibimbap}/>
-      <Route path="/gimbap" component={Gimbap}/>
-      <Route path="/bulgogi" component={Bulgogi}/>
-      <ProtectedRoute path="/logout" component={Logout} auth={auth}/>
-     </Switch>
+     <Routes>
+      <Route path ="/" exact element={<Land/>}/>
+      <Route path ="/recipe" exact element={<Recipe/>}/>
+      <Route path ="/register" exact element={<Register/>}/>
+      <Route path ="/login" exact element={<Login/>}/>
+      <Route path ="/kimchi" exact element={<Kimchi/>}/>
+      <Route path ="/ramen" exact element={<Ramen/>}/>
+      <Route path ="/tteo" exact element={<Tteo/>}/>
+      <Route path ="/bibimbap" exact element={<Bibimbap/>}/>
+      <Route path ="/gimbap" exact element={<Gimbap/>}/>
+      <Route path ="/bulgogi" exact element={<Bulgogi/>}/>
+      <Route path ="/logout" exact element={<Logout/>}/>
+     </Routes>
      <Footer/> 
     </div>
   );
